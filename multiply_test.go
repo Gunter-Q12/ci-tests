@@ -1,9 +1,10 @@
 package hello
 
-import "testing"
+import (
+	"github.com/stretchr/testify/assert"
+	"testing"
+)
 
 func TestMultiply(t *testing.T) {
-	if multiply(2, 2) != 4 {
-		t.Fatal("Multiply failed")
-	}
+	assert.Equal(t, 4, multiply(2, 2))
 }
