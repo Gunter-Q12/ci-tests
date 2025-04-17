@@ -28,7 +28,7 @@ jobs:
 
     - name: Gen overage
       run: |
-        go tool cover -func=coverage.out -o=coverage.out | sed -n 's/.*coverage: \([0-9.]*\)%.*/{totals: {percent_covered_display: \1}}/p' > coverage.json
+        go test -v ./... -coverprofile=coverage.out | sed -n 's/.*coverage: \([0-9.]*\)%.*/{totals: {percent_covered_display: \1}}/p' > coverage.json
         
 
     - name: Save coverage.json as artifact
