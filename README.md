@@ -1,0 +1,1 @@
+[![cov](https://Gunter-Q12.github.io/ci-tests/badges/coverage.svg)](https://github.com/Gunter-Q12/ci-tests/actions)
