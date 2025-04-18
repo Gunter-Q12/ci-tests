@@ -1,4 +1,4 @@
-package hello
+package hello_test
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -6,5 +6,5 @@ import (
 )
 
 func TestMultiply(t *testing.T) {
-	assert.Equal(t, 4, multiply(2, 2))
+	assert.Equal(t, 4, Multiply(2, 2))
 }
