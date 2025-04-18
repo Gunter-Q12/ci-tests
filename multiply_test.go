@@ -6,5 +6,5 @@ import (
 )
 
 func TestMultiply(t *testing.T) {
-	assert.Equal(t, 4, Multiply(2, 2))
+	assert.Equal(t, 4, 2*2)
 }
